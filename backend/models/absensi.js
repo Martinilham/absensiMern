@@ -17,6 +17,10 @@ const Absensi = mongoose.Schema(
         jam:{
             type:String,
             required:true
+        },
+        keterangan:{
+            type:String,
+            required:true
         }
             
         
