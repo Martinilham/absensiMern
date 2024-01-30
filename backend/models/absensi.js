@@ -1,31 +1,17 @@
 import mongoose from "mongoose";
 
 const Absensi = mongoose.Schema(
-    {
-        nama:{
-            type:String,
+    {    
+        hari:{
+            type:Date,
             required:true
         },
-        email:{
+        jam:{
             type:String,
             required:true
-        },
-        nomor:{
-            type:String,
-            required:true
-        },
-        absen:[
-            {
-                hari:{
-                    type:Date,
-                    required:true
-                },
-                jam:{
-                    type:String,
-                    required:true
-                }
-            }
-        ]
+        }
+            
+        
     }
 )
 
