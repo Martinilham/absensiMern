@@ -26,6 +26,38 @@ const Siswa = mongoose.Schema(
             type:String,
             required:true
         },
+        nilai:[
+            {
+                bhsindo:{
+                    type:String,
+                    
+                },
+                mtk:{
+                    type:String,
+                    
+                },
+                inggris:{
+                    type:String,
+                    
+                }
+            }
+        ],
+        absensi:[
+            {
+                hari:{
+                    type:Date,
+                    
+                },
+                jam:{
+                    type:String,
+                    
+                },
+                keterangan:{
+                    type:String,
+                    
+                }
+            }
+        ]
 
     }
 )
