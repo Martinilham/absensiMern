@@ -6,7 +6,7 @@ import {
 
 const router = express.Router();
 
-router.get('/users',getAdmin);
-router.post('/users',saveSiswa);
+router.get('/Admin',getAdmin);
+router.post('/Admin',saveAdmin);
 
 export default router

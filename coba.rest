@@ -1,0 +1,7 @@
+POST http://localhost:5000/Admin Content-Type: application/json
+
+{
+    "nama": "ilham",
+    "password" : "123"
+
+}

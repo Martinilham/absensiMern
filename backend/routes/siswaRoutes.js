@@ -9,10 +9,10 @@ import {
 
 const router = express.Router();
 
-router.get('/users',getSiswa);
-router.get('/users/:id',getSiswaByNis);
-router.post('/users',saveSiswa);
-router.patch('/users/:id',updateSiswa);
-router.delete('/users/:id',deleteSiswa)
+router.get('/siswa',getSiswa);
+router.get('/siswa/:id',getSiswaByNis);
+router.post('/siswa',saveSiswa);
+router.patch('/siswa/:id',updateSiswa);
+router.delete('/siswa/:id',deleteSiswa)
 
 export default router

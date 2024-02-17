@@ -1,14 +1,14 @@
-import Siswa from "../models/administrator.js";
+import Admin from "../models/administrator.js";
 
-export const getadmin = async(req,res)=>{
+export const getAdmin = async(req,res)=>{
     try {
-        const admin = await Siswa.find();
+        const admin = await Admin.find();
         res.json(admin)
     } catch{
         res.status(500).json({message: error.message});
     }
 }
-export const saveadmin = async (req, res) => {
+export const saveAdmin = async (req, res) => {
     const Admin = new Admin(req.body);
     try {
         const insertedAdmin = await Admin.save();

@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const administrator = mongoose.Schema(
+const Admin = mongoose.Schema(
     {
         nama: {
             type:String
@@ -10,3 +10,4 @@ const administrator = mongoose.Schema(
         }
     }
 )
+export default mongoose.model("Admin",Admin);
