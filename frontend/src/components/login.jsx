@@ -1,6 +1,21 @@
 import React from 'react'
 
 export default function Login() {
+  const [nama, setName] = useState("");
+
+  const saveUser = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:5000/users", {
+        nama,
+        password,
+      });
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className='bg-white w-full  '>
 <form className=" flex-1 w-full max-w-sm m-auto mt-36">

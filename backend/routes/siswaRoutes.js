@@ -5,7 +5,7 @@ import {
     saveSiswa,
     updateSiswa,
     deleteSiswa
-} from '../controllers/userControllers.js';
+} from '../controllers/siswaControllers.js';
 
 const router = express.Router();
 

@@ -1,4 +1,4 @@
-import Siswa from "../models/siswaModels";
+import Siswa from "../models/siswaModels.js";
 
 export const getSiswa = async(req,res)=>{
     try {
