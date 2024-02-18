@@ -2,11 +2,13 @@ import mongoose from "mongoose";
 
 const Admin = mongoose.Schema(
     {
-        nama: {
-            type:String
+        nama:{
+            type:String,
+            required:true
         },
-        password: {
-            type:String
+        password:{
+            type:String,
+            required:true
         }
     }
 )

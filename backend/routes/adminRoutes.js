@@ -4,9 +4,9 @@ import {
     saveAdmin,
 } from '../controllers/adminControllers.js';
 
-const router = express.Router();
+const routerAdmin = express.Router();
 
-router.get('/Admin',getAdmin);
-router.post('/Admin',saveAdmin);
+routerAdmin.get('/admin',getAdmin);
+routerAdmin.post('/admin',saveAdmin);
 
-export default router
+export default routerAdmin;

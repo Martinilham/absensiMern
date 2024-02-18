@@ -9,9 +9,9 @@ export const getAdmin = async(req,res)=>{
     }
 }
 export const saveAdmin = async (req, res) => {
-    const Admin = new Admin(req.body);
+    const admin = new Admin(req.body);
     try {
-        const insertedAdmin = await Admin.save();
+        const insertedAdmin = await admin.save();
         res.status(201).json(insertedAdmin);
     } catch (error) {
         res.status(400).json({message: error.message});
